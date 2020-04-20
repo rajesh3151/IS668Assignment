@@ -1,0 +1,47 @@
+<!doctype html>
+<body style="background-color:white;">
+{% if name.lower() == 'pip' %}
+
+<h1>What is PIP?</h1>
+ <h2>Description</h2>
+Pip is a package-management system used to install/uninstall and manage software packages written in Python. Most of the distributions of Python come with pip preinstalled. Using pip, certain version package can be installed that are not part of the Python standard library. Through command-line interface pip command can be executed.pip can be used among various operating systems such as Linux, windows and others. It’s an replacement for easy_install. PyPI is the python package index where libraries are indexed whenever the metadata gets updated. Pip search for available package from this index to find and install the same.<br><br><br>
+
+<B><font color="CC0000">Reference:</font></b><p><br>
+
+<a href="https://www.datacamp.com/community/tutorials/pip-python-package-manager" target="box">
+https://www.datacamp.com/community/tutorials/pip-python-package-manager</a><BR>
+
+<a href="https://pip.pypa.io/en/stable/" target="box">https://pip.pypa.io/en/stable/</a><BR>
+
+
+{% elif name.lower() == 'flask' %}
+ <h1>What is flask?</h1>
+ <h2>Description</h2>
+Flask is a lightweight micro web framework written in Python. It’s called microframework because it needs minimal or no dependencies on any external libraries. There is less boilerplate code to create and run a simple application. Flask become more popular framework compared to other web frameworks such as Django since Django has more boilerplate code even to launch a simple web application. However, Flask does not have database abstraction layer or any other components. Flask was designed in the year 2010. When the API gets more complicated, there is a potential to add more dependencies by adding an external library to it. In the Flask framework, the variables are injected into HTML template through Python code.<br><br>
+
+<B><font color="CC0000">Reference:</font></b><p><br>
+
+<a href="https://www.fullstackpython.com/flask.html" target="box">https://www.fullstackpython.com/flask.html</a><BR>
+<a href="https://pymbook.readthedocs.io/en/latest/flask.html" target="box">https://pymbook.readthedocs.io/en/latest/flask.html</a><BR>
+<a href="https://www.fullstackpython.com/flask.html" target="box">https://www.fullstackpython.com/flask.html</a><BR>
+<a href="https://dev.to/amigosmaker/what-is-flask-used-for-2do5" target="box">https://dev.to/amigosmaker/what-is-flask-used-for-2do5</a><BR>
+
+{% elif name.lower() == 'routeinflask' %}
+<h1>What is a route in flask?</h1>
+ <h2>Description</h2>
+Every web framework begins with the concept of serving content at a given URL.Route(“/”) is a Python decorator is used to register a function for a given URL rule. There are URL, endpoint, options. Flask assumes the name of the function as endpoint because the URL might change whereas the names of pages generally always stay the same. parameters can be used when creating routes. And parameter can be string, int, float and path. Path is similar to string but accepts slashes. It can have single or multiple parameter. Flask support API methods such as POST, GET and others. Dynamic Routes and variable Rules can be created by the passing the variable value in the URL and the value get passed into respective methods based on the Route and method as a method parameter.<br><br>
+<B><font color="CC0000">Reference:</font></b><p><br>
+<a href="https://hackersandslackers.com/flask-routes/" target="box">https://hackersandslackers.com/flask-routes/</a><BR>
+<a href="https://pythonbasics.org/flask-tutorial-routes/" target="box">https://pythonbasics.org/flask-tutorial-routes/</a><BR>
+
+
+{% elif name.lower() == 'templateinflask' %}
+<h1>What is a template in Flask? </h1>
+ <h2>Description</h2>
+Flask leverages Jinja2 as its template engine. There are various other template engine too. Flask uses Jinja template library to render templates. Templates are files that contain non-dynamic data and also variables in the template to handle the data that are passed into it. Values passed into variables are dynamic data. Flask will look for templates in the templates folder.so if the application is a module, this folder is next to that module, If it’s a package its inside the package.<br><br>
+
+<B><font color="CC0000">Reference:</font></b><p><br>
+<a href="https://flask.palletsprojects.com/en/1.1.x/templating/" target="box">https://flask.palletsprojects.com/en/1.1.x/templating/</a><BR>
+
+{% endif %}
+</body>
